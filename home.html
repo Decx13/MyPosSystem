@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport">
+    <link rel="stylesheet" href="assests/stylesheet.css">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid text-white fw-bold">
+            <img src="logos/pos.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                 TownShop
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="http://localhost:63342/POS%20SYSTEM/home.html?#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="http://localhost:63342/POS%20SYSTEM/Items.html?_ijt=humddiqi083taukmbpfoft86m2&_ij_reload=RELOAD_ON_SAVE">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="http://localhost:63342/POS%20SYSTEM/order_form.html?_ijt=7eu80f3ig6jlv4m7vnqnehg9dl&_ij_reload=RELOAD_ON_SAVE">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex" >
+                    <img src="logos/free-sign-out-icon-3300-thumb.png" alt="logo" width="35" height="35">
+                    <button class="btn btn-outline-dark fw-bold" type="submit">signout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    <div class="container">
+        <br>
+        <img id="img1" src="logos/images (1).png" alt="icon" width="40" height="40">
+        <h1 class="d-inline-block align-text-top">CUSTOMER</h1>
+    </div><br>
+
+
+<div id="maincontainer" class="container bg-body-secondary">
+    <div id="customermanage" class="row bg-success-subtle">
+        <form >
+            <div class="mb-3 fw-bold">
+                <label for="customerId" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="customerId" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customername" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="customername" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customeradd" class="form-label">Customer Address</label>
+                <input type="text" class="form-control" id="customeradd" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customersalary" class="form-label">Customer Salary</label>
+                <input type="text" class="form-control" id="customersalary" aria-describedby="emailHelp">
+            </div>
+            <button1   type="submit" class="btn btn-success">Save</button1>
+            <button1  type="submit" class="btn btn-primary">Update</button1>
+            <button1   type="submit" class="btn btn-danger">Delete</button1>
+        </form>
+
+    </div>
+    <div id="searchcustomer" class="row">
+        <form class="container">
+            <div class="mb-3 fw-bold">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="customerid" class="form-label">Enter Customer ID</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp"><br>
+                <button type="submit" class="btn btn-success fw-bold">Search Customer</button>
+                <img id="searchicon" src="logos/icons8-search-208.png" name="search icon" width="40" height="40">
+                <br>
+                <br>
+                <br>
+                <button id="customerdetails" type="submit" class="btn   text-white">Customer Details</button>
+                <button id="viewcus" type="submit" class="btn   text-white">View All Customers</button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<br>
+<table class=" container table table-bordered table-hover">
+    <thead class="bg-dark text-white">
+    <tr>
+        <th>customer id</th>
+        <th>customer name</th>
+        <th>customer address</th>
+        <th>customer salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <td>C001</td>
+    <td>Nimal</td>
+    <td>Galle</td>
+    <td>35000.00</td>
+
+    <tbody>
+    <td>C002</td>
+    <td>kamal</td>
+    <td>kottawa</td>
+    <td>45000.00</td>
+
+    </tbody>
+</table>
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
